@@ -1,10 +1,9 @@
 # -- coding: utf-8 --
-a=int(input())
-b=int(input())
-c=int(input())
-if b>=a<=c:
-    print(a)
-elif a>=b<=c:
-    print(b)
-else:
-    print(c)
+
+def w():
+    print('Введите 3 числа')
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    return min(x,y,z)
+print (w())

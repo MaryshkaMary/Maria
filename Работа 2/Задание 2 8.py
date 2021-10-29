@@ -1,10 +1,14 @@
 # -- coding: utf-8 --
-a = int(input())
-b = int(input())
-c = int(input())
-if (a ==b == c):
-    print('3')
-elif a == b or b == c or a == c:
-    print('2')
-else:
-    print('0')
+
+def r():
+    print('Введите 3 числа')
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    if (a ==b == c):
+        return'3'
+    elif a == b or b == c or a == c:
+        return'2'
+    else:
+         return'0'
+print(r())

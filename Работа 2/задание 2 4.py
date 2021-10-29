@@ -1,6 +1,10 @@
 # -- coding: utf-8 --
-a=int(input('расстаяние между рядами '))
-b=int(input('расстояние между дорочками в ряду '))
-l=int(input('длинна кончиков шнурка '))
-N=int(input('количество дырочек в каждом ряду '))
-print(2*1+(2*N-1)*a+2*(N-1)*b)
+
+def w():
+    print("Введите 4 числа")
+    a = int(input())
+    b = int(input())
+    l = int(input())
+    N = int(input())
+    return (2 * N - 1) * a + 2 * 1 + 2 * (N - 1) * b
+print(w())

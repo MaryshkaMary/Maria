@@ -1,11 +1,14 @@
 # -- coding: utf-8 --
-a = int(input())
-b = int(input())
-c = int(input())
-if a != b:
-    if (a * b > c) and (c % a == 0 or c % b == 0):
-        print('да')
+
+def r():
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    if a != b:
+        if (a * b > c) and (c % a == 0 or c % b == 0):
+            return'да'
+        else:
+            return'нет'
     else:
-        print('нет')
-else:
-    print('Шоколадка должна быть прямоугольной формы')
+        return'Шоколадка должна быть прямоугольной формы'
+print(r())
